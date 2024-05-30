@@ -60,6 +60,3 @@ To run the ToDoApp on your local machine:
 ![alt text](image-3.png)
 ![alt text](image-4.png)
 ![alt text](image-5.png)
-
-
-Feel free to add any additional information or sections as needed for your project.
