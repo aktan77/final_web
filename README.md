@@ -54,4 +54,12 @@ To run the ToDoApp on your local machine:
 - The application uses an H2 in-memory database by default. You can configure it to use a different database if needed.
 - Make sure to handle security aspects such as authentication and authorization based on your requirements before deploying the application in a production environment.
 
+## Screenshots
+![alt text](image-1.png)
+![alt text](image-2.png)
+![alt text](image-3.png)
+![alt text](image-4.png)
+![alt text](image-5.png)
+
+
 Feel free to add any additional information or sections as needed for your project.
