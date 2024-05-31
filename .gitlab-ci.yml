@@ -17,6 +17,6 @@ docker-image:
   # before_script:
   # - apk add --update --no-cache git
   script:
-    - cat $DOCKER_TOKEN | docker login -u $DOCKER_USR --password-stdin 
+    - echo $DOCKER_TOKEN | docker login -u $DOCKER_USR --password-stdin 
     - docker build -t java-app:latest .
     - docker push java-app:latest
