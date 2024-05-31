@@ -19,4 +19,4 @@ docker-image:
   script:
     - echo $DOCKER_TOKEN | docker login -u $DOCKER_USR --password-stdin 
     - docker build -t java-app:latest .
-    - docker push java-app:latest
+    - docker push $JAVA_REPO_NAME
