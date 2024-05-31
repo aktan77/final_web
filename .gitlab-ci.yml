@@ -1,0 +1,22 @@
+image: docker:19-git
+
+services:
+  - docker:dind
+
+stages:
+  - build
+  - push
+
+docker-image:
+  image: docker:19-git
+  # before_script:
+  # - apk add --update --no-cache git
+  services:
+    - docker:dind
+  stage: build
+  # before_script:
+  # - apk add --update --no-cache git
+  script:
+    - cat $DOCKER_TOKEN | docker login -u $DOCKER_USR --password-stdin 
+    - docker build -t java-app:latest .
+    - docker push java-app:latest
